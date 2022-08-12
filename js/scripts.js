@@ -35,24 +35,31 @@ function quizResult(event){
 	if (globalQuizVal < 5){
 		const error = document.getElementById("error")
 		error.removeAttribute("class")
+		error.classList.add("displayResult")
 	}  else if (globalQuizVal >= 5 && globalQuizVal < 11) {
 		const ruby = document.getElementById("ruby")
 		ruby.removeAttribute("class")
+		ruby.classList.add("displayResult")
 	}  else if (globalQuizVal >= 11 && globalQuizVal < 16) {
 		const python = document.getElementById("python")
 		python.removeAttribute("class")
+		python.classList.add("displayResult")
 	}  else if (globalQuizVal >= 16 && globalQuizVal < 21) {
 		const javaScript = document.getElementById("javaScript")
 		javaScript.removeAttribute("class")
+		javaScript.classList.add("displayResult")
 	}  else if (globalQuizVal >= 21 && globalQuizVal < 25) {
 		const cSharp = document.getElementById("cSharp")
 		cSharp.removeAttribute("class")
+		cSharp.classList.add("displayResult")
 	}  else if (globalQuizVal > 500) {
 		const swift = document.getElementById("swift")
 		swift.removeAttribute("class")
+		swift.classList.add("displayResult")
 	}  else {
 		const error = document.getElementById("error")
 		error.removeAttribute("class")
+		error.classList.add("displayResult")
 	}
 
 

@@ -53,5 +53,14 @@ body{
 	display: none;
 }
 
+.displayResult{
+	border: 5px solid #4da6ff;
+	background-color: #99ccff;
+	padding-left: 35px;
+	padding-right: 55px;
+	padding-top: 50px;
+	padding-bottom: 40px;
+}
+
 
 
