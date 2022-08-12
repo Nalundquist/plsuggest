@@ -21,3 +21,8 @@ body{
 	border: 5px solid #4da6ff;
 	background-color: #99ccff;
 }
+
+.hidden {
+	display: none;
+}
+
