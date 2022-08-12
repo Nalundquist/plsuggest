@@ -15,6 +15,7 @@ A webpage containing a tongue-in-cheek quiz that suggests a programming language
 
 * Several multiple choice questions
 * Branching results based on those answers
+* Stylesheet change on specific result
 * Saltwater Taffy
 * Alan Turing
 
