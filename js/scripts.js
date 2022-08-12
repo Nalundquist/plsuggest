@@ -32,25 +32,29 @@ function quizResult(event){
 	
 	const nameFill = document.getElementById("nameInput").value;
 	
-	document.querySelector("nameResult").innerText = nameFill;
 
 	if (globalQuizVal >= 5 && globalQuizVal < 11) {
+		document.querySelector("span#nameRuby").innerText = nameFill
 		const ruby = document.getElementById("ruby");
 		ruby.removeAttribute("class");
 		ruby.classList.add("displayResult");
 	}  else if (globalQuizVal >= 11 && globalQuizVal < 16) {
+		document.querySelector("span#namePython").innerText = nameFill
 		const python = document.getElementById("python");
 		python.removeAttribute("class");
 		python.classList.add("displayResult");
 	}  else if (globalQuizVal >= 16 && globalQuizVal < 21) {
+		document.querySelector("span#nameJS").innerText = nameFill
 		const javaScript = document.getElementById("javaScript");
 		javaScript.removeAttribute("class");
 		javaScript.classList.add("displayResult");
 	}  else if (globalQuizVal >= 21 && globalQuizVal < 25) {
+		document.querySelector("span#nameCS").innerText = nameFill
 		const cSharp = document.getElementById("cSharp");
 		cSharp.removeAttribute("class");
 		cSharp.classList.add("displayResult");
 	}  else if (globalQuizVal > 500) {
+		document.querySelector("span#nameSwift").innerText = nameFill
 		const swift = document.getElementById("swift");
 		swift.removeAttribute("class");
 		swift.classList.add("displayResult");
