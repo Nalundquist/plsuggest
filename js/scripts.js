@@ -1,21 +1,6 @@
 // Business Logic
-function quizTabulate(){
 
-	if (document.getElementById("albumInput").value === null) {
-		document.getElementById("albumInput").value = 0;
-	}
-	if (document.getElementById("wordInput").value === null) {
-		document.getElementById("wordInput").value = 0;
-	}
-	if (document.getElementById("peanutInput").value === null) {
-		document.getElementById("peanutInput").value = 0;
-	}
-	if (document.getElementById("sMInput").value === null) {
-		document.getElementById("sMInput").value = 0;
-	}
-	if (document.getElementById("candyInput").value === null) {
-		document.getElementById("candyInput").value = 0;
-	}
+function quizTabulate(){
 
 	const nameResult = document.getElementById("nameInput").value;
 	const albumVal = parseInt(document.querySelector("input[name='albumInput']:checked").value);
@@ -24,15 +9,7 @@ function quizTabulate(){
 	const sMVal = parseInt(document.querySelector("input[name='sMInput']:checked").value);
 	const candyVal = parseInt(document.querySelector("input[name='candyInput']:checked").value);
 
-	
-
 	const quizVal = albumVal + wordVal + peanutVal + sMVal + candyVal;
-	console.log("album = " + albumVal)
-	console.log("word = " + wordVal)
-	console.log("peanut = " + peanutVal)
-	console.log("social = " + sMVal)
-	console.log("candy = " + candyVal)
-	console.log("quiz = " + quizVal)
 	return quizVal;
 }
 
@@ -40,7 +17,6 @@ function quizTabulate(){
 function quizResult(event){
 	event.preventDefault();
 	const globalQuizVal = quizTabulate();
-	console.log("global = " + globalQuizVal)
 
 	const error = document.getElementById("error")
 	const ruby = document.getElementById("ruby")

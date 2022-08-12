@@ -6,7 +6,14 @@ body{
 .wrapper{
 	margin-left: 8%;
 	margin-right: 12%;
-	margin-top: 20px;
+	margin-top: 50px;
+}
+
+.wrapper2{
+	margin-left: 5%;
+	margin-right: 6%;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 .header {
@@ -22,7 +29,29 @@ body{
 	background-color: #99ccff;
 }
 
+.subhead {
+	margin-left: 20%;
+	margin-right: 25%;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.qdisplay {
+	border: 5px solid #4da6ff;
+	background-color: #99ccff;
+	margin-left: 6%;
+	margin-right: 7%;
+	margin-top:15px;
+	padding-left: 20px;
+	padding-right: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 0.95em;
+}
+
 .hidden {
 	display: none;
 }
+
+
 
