@@ -34,7 +34,17 @@ function quizResult(event){
 	if (globalQuizVal >= 5 && globalQuizVal < 11) {
 		document.querySelector("span#nameRuby").innerText = nameFill
 		ruby.removeAttribute("class");
-		ruby.classList.add("displayResult");
+		ruby.classList.add("displayResultRuby");
+		document.querySelector("body").setAttribute("class", "bodyRuby");
+		document.getElementById("btn").setAttribute("class", "btnRuby");
+		document.getElementById("header").setAttribute("class", "headerRuby");
+		document.getElementById("nameDisplay").setAttribute("class", "qdisplayRuby");
+		document.getElementById("q1").setAttribute("class", "qdisplayRuby");
+		document.getElementById("q2").setAttribute("class", "qdisplayRuby");
+		document.getElementById("q3").setAttribute("class", "qdisplayRuby");
+		document.getElementById("q4").setAttribute("class", "qdisplayRuby");
+		document.getElementById("q5").setAttribute("class", "qdisplayRuby");
+		document.getElementById("submit").setAttribute("class", "qdisplayRuby");
 	}  else if (globalQuizVal >= 11 && globalQuizVal < 15) {
 		document.querySelector("span#namePython").innerText = nameFill
 		python.removeAttribute("class");
