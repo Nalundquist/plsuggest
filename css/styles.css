@@ -43,7 +43,7 @@ body{
 	background-color: #99ccff;
 	margin-left: 6%;
 	margin-right: 7%;
-	margin-top:15px;
+	margin-top: 15px;
 	padding-left: 20px;
 	padding-right: 30px;
 	padding-top: 20px;
@@ -57,6 +57,15 @@ body{
 	border-radius: 4px;
 	font-size: 1.03em;
 	padding: 4px;
+	transition-duration: 0.2s;
+}
+
+.btn:hover {
+	background-color: aquamarine;
+}
+
+.btn:active {
+	background-color: deepskyblue;
 }
 
 .hidden {
