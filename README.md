@@ -2,6 +2,11 @@
 
 ### Created by Noah Lundquist in August of 2022
 
+## Links
+
+* [Repository](https://github.com/nalundquist/plsuggest)
+* [Webpage](https://nalundquist.github.io/plsuggest)
+
 ## Description
 
 A webpage containing a tongue-in-cheek quiz that suggests a programming language to study based upon user answers to a series of questions.  Not legally binding.
