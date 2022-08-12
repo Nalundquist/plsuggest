@@ -1,11 +1,31 @@
 // Business Logic
 function quizTabulate(){
+
+	if (document.getElementById("albumInput").value === null) {
+		document.getElementById("albumInput").value = 0;
+	}
+	if (document.getElementById("wordInput").value === null) {
+		document.getElementById("wordInput").value = 0;
+	}
+	if (document.getElementById("peanutInput").value === null) {
+		document.getElementById("peanutInput").value = 0;
+	}
+	if (document.getElementById("sMInput").value === null) {
+		document.getElementById("sMInput").value = 0;
+	}
+	if (document.getElementById("candyInput").value === null) {
+		document.getElementById("candyInput").value = 0;
+	}
+
 	const nameResult = document.getElementById("nameInput").value;
 	const albumVal = parseInt(document.querySelector("input[name='albumInput']:checked").value);
 	const wordVal = parseInt(document.querySelector("input[name='wordInput']:checked").value);
 	const peanutVal = parseInt(document.querySelector("input[name='peanutInput']:checked").value);
 	const sMVal = parseInt(document.querySelector("input[name='sMInput']:checked").value);
 	const candyVal = parseInt(document.querySelector("input[name='candyInput']:checked").value);
+
+	
+
 	const quizVal = albumVal + wordVal + peanutVal + sMVal + candyVal;
 	console.log("album = " + albumVal)
 	console.log("word = " + wordVal)
