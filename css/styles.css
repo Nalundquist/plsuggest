@@ -1,5 +1,6 @@
 body{
 	background-color: #e6e6ff;
+	font-size: 1.2em;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -34,6 +35,7 @@ body{
 	margin-right: 25%;
 	margin-bottom: 20px;
 	margin-top: 20px;
+	font-size: 1.3em;
 }
 
 .qdisplay {
@@ -49,6 +51,14 @@ body{
 	font-size: 0.95em;
 }
 
+.btn{
+	background-color: #ccddff;
+	border: 2px solid #0080ff;
+	border-radius: 4px;
+	font-size: 1.03em;
+	padding: 4px;
+}
+
 .hidden {
 	display: none;
 }
@@ -60,7 +70,11 @@ body{
 	padding-right: 55px;
 	padding-top: 50px;
 	padding-bottom: 40px;
+	margin-bottom: 50px;
+	line-height: 30px;
 }
 
-
-
+.footer{
+	margin: 30px;
+	padding: 30px;
+}
