@@ -35,15 +35,15 @@ function quizResult(event){
 		document.querySelector("span#nameRuby").innerText = nameFill
 		ruby.removeAttribute("class");
 		ruby.classList.add("displayResult");
-	}  else if (globalQuizVal >= 11 && globalQuizVal < 16) {
+	}  else if (globalQuizVal >= 11 && globalQuizVal < 15) {
 		document.querySelector("span#namePython").innerText = nameFill
 		python.removeAttribute("class");
 		python.classList.add("displayResult");
-	}  else if (globalQuizVal >= 16 && globalQuizVal < 21) {
+	}  else if (globalQuizVal >= 15 && globalQuizVal < 19) {
 		document.querySelector("span#nameJS").innerText = nameFill
 		javaScript.removeAttribute("class");
 		javaScript.classList.add("displayResult");
-	}  else if (globalQuizVal >= 21 && globalQuizVal < 25) {
+	}  else if (globalQuizVal >= 19 && globalQuizVal < 25) {
 		document.querySelector("span#nameCS").innerText = nameFill
 		cSharp.removeAttribute("class");
 		cSharp.classList.add("displayResult");
