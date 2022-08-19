@@ -22,12 +22,14 @@ function quizResult(event){
 	const javaScript = document.getElementById("javaScript");
 	const cSharp = document.getElementById("cSharp");
 	const swift = document.getElementById("swift");
+	const error = document.getElementById("error");
 
 	ruby.classList.add("hidden");
 	python.classList.add("hidden");
 	javaScript.classList.add("hidden");
 	cSharp.classList.add("hidden");
 	swift.classList.add("hidden");
+	error.classList.add("hidden");
 	
 	const nameFill = document.getElementById("nameInput").value;
 
@@ -46,22 +48,26 @@ function quizResult(event){
 		document.getElementById("q5").setAttribute("class", "qdisplayRuby");
 		document.getElementById("submit").setAttribute("class", "qdisplayRuby");
 	}  else if (globalQuizVal >= 11 && globalQuizVal < 15) {
-		document.querySelector("span#namePython").innerText = nameFill
+		document.querySelector("span#namePython").innerText = nameFill;
 		python.removeAttribute("class");
 		python.classList.add("displayResult");
 	}  else if (globalQuizVal >= 15 && globalQuizVal < 19) {
-		document.querySelector("span#nameJS").innerText = nameFill
+		document.querySelector("span#nameJS").innerText = nameFill;
 		javaScript.removeAttribute("class");
 		javaScript.classList.add("displayResult");
 	}  else if (globalQuizVal >= 19 && globalQuizVal < 25) {
-		document.querySelector("span#nameCS").innerText = nameFill
+		document.querySelector("span#nameCS").innerText = nameFill;
 		cSharp.removeAttribute("class");
 		cSharp.classList.add("displayResult");
 	}  else if (globalQuizVal > 500) {
-		document.querySelector("span#nameSwift").innerText = nameFill
+		document.querySelector("span#nameSwift").innerText = nameFill;
 		swift.removeAttribute("class");
 		swift.classList.add("displayResult");
-	} 
+	} else {
+		document.querySelector("span#nameError").innerText = nameFill;
+		error.removeAttribute("class");
+		error.classList.add("displayResult");
+	}
 
 }
 
